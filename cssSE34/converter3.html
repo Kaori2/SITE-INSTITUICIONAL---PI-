@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<!-- saved from url=(0066)file:///C:/Users/Marise%20Miranda/Downloads/Marises%20Machine.html -->
+<html lang="pt-br"> 
+        
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title> <link rel="shortcut icon" href="https://cdn0.iconfinder.com/data/icons/black-cat-emoticon-filled/64/cute_cat_kitten_face_per_avatar-34-512.png" type="image/x-icon">
+</head>
+<style>
+body {
+background-color: #3e769b;
+
+       
+}
+.mainborder{
+  width: 500px;
+    height: fit-content;
+    margin: 10px;
+    background-color: rgb(193, 210, 251);
+}
+.tab {
+
+        align-content: center;
+  overflow: hidden;
+  border: 1px solid #878787;
+  background-color: #fdfdfd;
+  border-style: double;
+  height: fit-content;
+  width: 150vh;
+}
+
+
+
+.tab button {
+       text-align: center;
+        align-content: center;
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+
+.tab button.active {
+  background-color: #c1d5f3;
+}
+
+
+.tabcontent {
+       align-content: center;
+       text-align: center;
+       display: none;
+       padding:8px;
+       border: 1px solid #9f9f9f;
+       border-top: none;
+       background-color: #c4d8ec;
+       height: fit-content;
+       width: 148vh;
+}
+
+.topcontent{
+  background-color: #bce3f0;
+border: double;
+height:50%;
+width:50%;
+text-align: center;
+}
+
+.button1 {
+  border-radius: none;
+  background-color: #bce3f0;
+ border: #bce3f0;
+}
+button{
+       
+       border-radius: 10px;
+       background-color: #ffffff;
+       border: 2px solid #e5f9ff;
+       transition-duration: 0.4s;
+       cursor: pointer;
+       padding: 1% 1%;
+       font-size: 10px;
+      font-weight: bold;
+      height: 5%;
+   }
+   button:hover{
+       background-color: #bce3f0;
+       color: rgb(51, 44, 44);
+   }
+   
+   button:active{
+       transform: translateY(12px);
+   }
+   
+           .font_white{
+           color: #ffffff;
+           
+           }
+        
+</style>
+<body>
+    
+  <center>
+<div class="tab mainborder">
+        <button class="tablinks" onclick="openCity(event, 'Octal')">Octal</button>
+        <button class="tablinks" onclick="openCity(event, 'Hexadecimal')">Hexadecimal</button>
+        <button class="tablinks" onclick="openCity(event, 'Binario')">Binario</button>
+        <button class="tablinks" onclick="openCity(event, 'Decimal')">Decimal</button>
+        <button class="tablinks" onclick="openCity(event, 'About Developer')">About Developer</button>
+        <button class="tablinks" onclick="openCity(event, 'More Info')">More Information</button>
+      </div>
+
+      <div id="Octal" class="tabcontent">
+        <h3>Octal</h3>
+        <p>8 digitos = 3 bits</p>
+      </div>
+      
+      <div id="Hexadecimal" class="tabcontent">
+        <h3>Hexadecimal</h3>
+        <p>16 digitos = 4 bits</p>
+      </div>
+      
+      <div id="Binario" class="tabcontent">
+        <h3>Binario</h3>
+        <p>2 digitos = 0 1 bits</p>
+      </div>
+
+      <div id="Decimal" class="tabcontent">
+        <h3>Decimal</h3>
+        <p>10 digitos</p>
+      </div>
+
+      <div id="About Developer" class="tabcontent">
+        <h3>About Developer</h3>
+        <p>Developer: Michelly Kaori Berse Katayama<br/>
+          Email: michelly.katayama@sptech.school<br/>
+          Class: SIS1<br/>
+          Professor: Marise<br/>
+        </p>
+      </div>
+
+      <div id="More Info" class="tabcontent">
+        <h3>More Info</h3>
+        <p>For more information please contact professor Marise <br>
+          Copyright Ⓒ Converter Machine | With all rights reserved 
+        </p>
+      </div><br>
+    </center>
+     <center>
+        <div class="topcontent">
+          <a href=""></a><p id="button1"><h1 style="color: #ffffff; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Converter Machine</h1></p></div></a>
+  </div>
+  <br><br>
+  </center>
+  
+   
+  <center>
+<br><br>
+     <a href="converter2.html"><button>Vamos Converter?</button></a>
+
+
+    <!-- </center>
+
+        <h3 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Decimal</h3>
+        <input id="demo1" type="text" placeholder="Digite o valor em decimal">
+
+<br><br>
+
+        <h3 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Converter para:</h3>
+
+ </center> -->
+ <!-- <center>
+        <input onclick="aparecer_octal()" type="checkbox"><b style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Octal</b>
+<br>
+        <div style="display: none; background-color: #dcdcdc; border-radius: 5px; padding: 5px; color: rgb(0, 0, 0); width: 15%; height: 40px; font-weight: 500;" id="demo2"></div>
+
+<br><br>
+
+        <input onclick="aparecer_hexa()" type="checkbox"><b style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Hexadecimal</b>
+<br>
+        <div style="display: none; background-color: #dcdcdc; border-radius: 5px; padding: 5px; color: rgb(7, 7, 7); width: 15%; height: 40px; font-weight: 500;" id="demo3"></div>
+        
+<br><br>
+
+        <input class="binario" onclick="aparecer_bin()" type="checkbox"><b style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Binário</b>
+<br>
+        <div style="display: none; background-color: #dcdcdc; border-radius: 5px; padding: 5px; color: rgb(5, 5, 5); width: 60%; height: 50px; font-weight: 500;" id="demo4"></div>
+
+<br><br>
+
+<button onclick="converter()">Converter</button>
+
+   </center>
+ -->
+
+
+<!DOCTYPE html>
+<!-- saved from url=(0066)file:///C:/Users/Marise%20Miranda/Downloads/Marises%20Machine.html -->
+<html lang="pt-br"> 
+        
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<style>
+body {
+background-color: #3e769b;
+
+       
+}
+.mainborder{
+  width: 500px;
+    height: fit-content;
+    margin: 10px;
+    background-color: rgb(193, 210, 251);
+}
+.tab {
+
+        align-content: center;
+  overflow: hidden;
+  border: 1px solid #878787;
+  background-color: #fdfdfd;
+  border-style: double;
+  height: fit-content;
+  width: 150vh;
+}
+
+
+
+.tab button {
+       text-align: center;
+        align-content: center;
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+
+.tab button.active {
+  background-color: #c1d5f3;
+}
+
+
+.tabcontent {
+       align-content: center;
+       text-align: center;
+       display: none;
+       padding:8px;
+       border: 1px solid #9f9f9f;
+       border-top: none;
+       background-color: #c4d8ec;
+       height: fit-content;
+       width: 148vh;
+}
+
+.topcontent{
+  background-color: #bce3f0;
+border: double;
+height:50%;
+width:50%;
+text-align: center;
+}
+
+.button1 {
+  border-radius: none;
+  background-color: #bce3f0;
+ border: #bce3f0;
+}
+button{
+       
+       border-radius: 10px;
+       background-color: #ffffff;
+       border: 2px solid #e5f9ff;
+       transition-duration: 0.4s;
+       cursor: pointer;
+       padding: 1% 1%;
+       font-size: 10px;
+      font-weight: bold;
+      height: 5%;
+   }
+   button:hover{
+       background-color: #bce3f0;
+       color: rgb(51, 44, 44);
+   }
+   
+   button:active{
+       transform: translateY(12px);
+   }
+   
+           .font_white{
+           color: #ffffff;
+           
+           }
+        
+</style>
+<body>
+    
+  <center>
+<div class="tab mainborder">
+    <a href="CONVERTER.html"><button class="tablinks" onclick="openCity(event, 'Homepage')">Homepage</button></a>
+        <button class="tablinks" onclick="openCity(event, 'Octal')">Octal</button>
+        <button class="tablinks" onclick="openCity(event, 'Hexadecimal')">Hexadecimal</button>
+        <button class="tablinks" onclick="openCity(event, 'Binario')">Binario</button>
+        <button class="tablinks" onclick="openCity(event, 'Decimal')">Decimal</button>
+        <button class="tablinks" onclick="openCity(event, 'About Developer')">About Developer</button>
+        <button class="tablinks" onclick="openCity(event, 'More Info')">More Information</button>
+      </div>
+      
+      <a id="Homepage" class="tabcontent" href="CONVERTER.html">
+        
+      </a>
+
+      <div id="Octal" class="tabcontent">
+        <h3>Octal</h3>
+        <p>8 digitos = 3 bits</p>
+      </div>
+      
+      <div id="Hexadecimal" class="tabcontent">
+        <h3>Hexadecimal</h3>
+        <p>16 digitos = 4 bits</p>
+      </div>
+      
+      <div id="Binario" class="tabcontent">
+        <h3>Binario</h3>
+        <p>2 digitos = 0 1 bits</p>
+      </div>
+
+      <div id="Decimal" class="tabcontent">
+        <h3>Decimal</h3>
+        <p>10 digitos</p>
+      </div>
+
+      <div id="About Developer" class="tabcontent">
+        <h3>About Developer</h3>
+        <p>Developer: Michelly Kaori Berse Katayama<br/>
+          Email: michelly.katayama@sptech.school<br/>
+          Class: SIS1<br/>
+          Professor: Marise<br/>
+        </p>
+      </div>
+
+      <div id="More Info" class="tabcontent">
+        <h3>More Info</h3>
+        <p>For more information please contact professor Marise <br>
+          Copyright Ⓒ Converter Machine | With all rights reserved 
+        </p>
+      </div><br>
+    </center>
+     <center>
+        <div class="topcontent">
+          <a href=""></a><p id="button1"><h1 style="color: #ffffff; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Converter Machine</h1></p></div></a>
+  </div>
+  <br><br>
+  </center>
+  <!-- <div id="Homepage" class="tabcontent">
+  <center>
+  <h1>Welcome to our Homepage: <br> 
+Our mission is to learn and use this machine to make our lives easy!
+</h1>
+</center>
+</div> -->
+  <center>
+<br><br>
+     <a href="converter2.html"><button>Vamos Converter?</button></a>
+
+     
+
+
+    <!-- </center>
+
+        <h3 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Decimal</h3>
+        <input id="demo1" type="text" placeholder="Digite o valor em decimal">
+
+<br><br>
+
+        <h3 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Converter para:</h3>
+
+ </center> -->
+ <!-- <center>
+        <input onclick="aparecer_octal()" type="checkbox"><b style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Octal</b>
+<br>
+        <div style="display: none; background-color: #dcdcdc; border-radius: 5px; padding: 5px; color: rgb(0, 0, 0); width: 15%; height: 40px; font-weight: 500;" id="demo2"></div>
+
+<br><br>
+
+        <input onclick="aparecer_hexa()" type="checkbox"><b style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Hexadecimal</b>
+<br>
+        <div style="display: none; background-color: #dcdcdc; border-radius: 5px; padding: 5px; color: rgb(7, 7, 7); width: 15%; height: 40px; font-weight: 500;" id="demo3"></div>
+        
+<br><br>
+
+        <input class="binario" onclick="aparecer_bin()" type="checkbox"><b style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Binário</b>
+<br>
+        <div style="display: none; background-color: #dcdcdc; border-radius: 5px; padding: 5px; color: rgb(5, 5, 5); width: 60%; height: 50px; font-weight: 500;" id="demo4"></div>
+
+<br><br>
+
+<button onclick="converter()">Converter</button>
+
+   </center>
+ -->
+
+
+
+<script>
+
+// function openCity(evt, cityName) {
+//   var i, tabcontent, tablinks;
+//   tabcontent = document.getElementsByClassName("tabcontent");
+//   for (i = 0; i < tabcontent.length; i++) {
+//     tabcontent[i].style.display = "none";
+//   }
+//   tablinks = document.getElementsByClassName("tablinks");
+//   for (i = 0; i < tablinks.length; i++) {
+//     tablinks[i].className = tablinks[i].className.replace(" active", "");
+//   }
+//   document.getElementById(cityName).style.display = "block";
+//   evt.currentTarget.className += " active";
+// }
+
+// function converter() {
+    
+//     var decimal = Number (demo1.value);
+
+// let octal = decimal.toString(8);
+
+// let hexadecimal = decimal.toString(16).toUpperCase();
+
+// let binaria = decimal.toString(2);
+
+// console.log (decimal);
+// console.log (octal);
+// console.log (hexadecimal);
+// console.log (binaria);
+
+// document.getElementById("demo1").innerHTML = ` ${decimal}`;
+// document.getElementById("demo2").innerHTML = ` ${octal}`;
+// document.getElementById("demo3").innerHTML = ` ${hexadecimal}`;
+// document.getElementById("demo4").innerHTML = ` ${binaria}`;
+
+
+// }
+
+// function aparecer_bin() {
+//     demo4.style.display = 'block'
+// }
+
+// function aparecer_hexa() {
+//     demo3.style.display = 'block'
+// }
+
+// function aparecer_octal() {
+//     demo2.style.display = 'block'
+// }
+// document.bgColor = "#00ffff";
+// </script></body></html>
+// <script>
+
+// function openCity(evt, cityName) {
+//   var i, tabcontent, tablinks;
+//   tabcontent = document.getElementsByClassName("tabcontent");
+//   for (i = 0; i < tabcontent.length; i++) {
+//     tabcontent[i].style.display = "none";
+//   }
+//   tablinks = document.getElementsByClassName("tablinks");
+//   for (i = 0; i < tablinks.length; i++) {
+//     tablinks[i].className = tablinks[i].className.replace(" active", "");
+//   }
+//   document.getElementById(cityName).style.display = "block";
+//   evt.currentTarget.className += " active";
+// }
+
+// function converter() {
+    
+//     var decimal = Number (demo1.value);
+
+// let octal = decimal.toString(8);
+
+// let hexadecimal = decimal.toString(16).toUpperCase();
+
+// let binaria = decimal.toString(2);
+
+// console.log (decimal);
+// console.log (octal);
+// console.log (hexadecimal);
+// console.log (binaria);
+
+// document.getElementById("demo1").innerHTML = ` ${decimal}`;
+// document.getElementById("demo2").innerHTML = ` ${octal}`;
+// document.getElementById("demo3").innerHTML = ` ${hexadecimal}`;
+// document.getElementById("demo4").innerHTML = ` ${binaria}`;
+
+
+// }
+
+// function aparecer_bin() {
+//     demo4.style.display = 'block'
+// }
+
+// function aparecer_hexa() {
+//     demo3.style.display = 'block'
+// }
+
+// function aparecer_octal() {
+//     demo2.style.display = 'block'
+// }
+// document.bgColor = "#00ffff";
+// </script></body></html>
